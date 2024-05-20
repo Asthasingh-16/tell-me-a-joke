@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+   /* Include padding and border in element's total width and height */
+}
+
+body {
+    background-color: #B5BA72;
+    text-align: center;
+    background-image: url(Screenshot\ 2024-05-20\ 145823.png);
+    
+}
+
+h1 {
+    font-size: 50px;
+    background-color: #d1c3a6;
+    padding-bottom: 5px;
+}
+
+header {
+    color: #4F359B;
+    margin-top: 3vmax;
+    margin-bottom: 1vmax;
+}
+
+button {
+    padding: 1rem;
+    font-size: 1.2rem;
+    background-color: #c7ba9f;
+    color: #221a08;
+    border-radius: 0;
+    border: 1px solid black;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #faeed7;
+}
+
+#inner-box {
+    height: 60vmin;
+    width: 70vmin;
+    border: 1px solid #1a0406; /* Added border style */
+    border-radius: 10%;
+    display: flex;
+    color: #ffebed;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5vmin;
+    background-color: #7D6F86;
+    margin-top: 10vmin;
+    margin-left: auto;
+    margin-right: auto; /* Centering the inner box */
+}
+
+.joke {
+    font-size: 35px;
+}
+
+/* Media Queries for Responsiveness */
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 40px; /* Adjust heading font size for smaller screens */
+    }
+
+    button {
+        font-size: 1rem; /* Adjust button font size for smaller screens */
+    }
+
+    #inner-box {
+        height: 50vmin;
+        width: 80vmin;
+        margin-top: 8vmin;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 30px; /* Further adjust heading font size for smaller screens */
+    }
+
+    button {
+        padding: 0.8rem; /* Adjust button padding for smaller screens */
+        font-size: 0.7rem; /* Further adjust button font size for smaller screens */
+    }
+
+    #inner-box {
+        height: 50vmin;
+        width: 90vmin;
+        margin-top: 6vmin;
+        font-size: 0.5rem;
+    }
+
+    .joke{
+        font-size: 0.8rem;
+    }
+}
